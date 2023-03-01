@@ -1,0 +1,159 @@
+JFDML JFormDesigner: "8.0.1.0.199" Java: "11.0.13" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundleName": "form"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "Timed CSP-J Model Checker"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "0:1.0, 80, 80"
+					"$rowSpecs": "0"
+					"$hGap": 5
+					"$vGap": 5
+				} ) {
+					name: "buttonBar"
+					"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "okButton"
+						"text": new FormMessage( null, "okButton.text" )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 1
+						"gridy": 0
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "cancelButton"
+						"text": new FormMessage( null, "cancelButton.text" )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 2
+						"gridy": 0
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "South"
+			} )
+			add( new FormContainer( "javax.swing.JSplitPane", new FormLayoutManager( class javax.swing.JSplitPane ) ) {
+				name: "topToolStripPanel"
+				"orientation": 0
+				add( new FormContainer( "javax.swing.JToolBar", new FormLayoutManager( class javax.swing.JToolBar ) ) {
+					name: "standardToolBar"
+					"minimumSize": new java.awt.Dimension( 446, 34 )
+					"maximumSize": new java.awt.Dimension( 446, 34 )
+					"preferredSize": new java.awt.Dimension( 446, 34 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "toolbarButtonNew"
+						"toolTipText": "New"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/newfile.png" )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "toolbarButtonOpen"
+						"text": " "
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/openfile.png" )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "toolbarButtonSave"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/save.png" )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button8toolbarButtonSaveAs"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/saveas.png" )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "toolbarButtonCut"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/cut.png" )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "toolbarButtonCopy"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/copy.png" )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "toolbarButtonPaste"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/paste.png" )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "toolbarButtonUndo"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/undo.png" )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "toolbarButtonRedo"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/redo.png" )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "left"
+				} )
+				add( new FormContainer( "javax.swing.JToolBar", new FormLayoutManager( class javax.swing.JToolBar ) ) {
+					name: "functionalToolBar"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "toolbarButtonSpecification"
+						"text": new FormMessage( null, "toolbarButtonSpecification.text" )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "toolbarButtonCheckGrammar"
+						"text": new FormMessage( null, "toolbarButtonCheckGrammar.text" )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "toolbarButtonSimulation"
+						"text": new FormMessage( null, "toolbarButtonSimulation.text" )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "toolbarButtonVerification"
+						"text": new FormMessage( null, "toolbarButtonVerification.text" )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "right"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "North"
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar2"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menuButtonFile"
+					"text": new FormMessage( null, "menuButtonFile.text" )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuButtonNew"
+						"text": new FormMessage( null, "menuButtonNew.text" )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuButtonOpen"
+						"text": new FormMessage( null, "menuButtonOpen.text" )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuButtonSave"
+						"text": new FormMessage( null, "menuButtonSave.text" )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuButtonSaveAs"
+						"text": new FormMessage( null, "menuButtonSaveAs.text" )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuButtonExit"
+						"text": new FormMessage( null, "menuButtonExit.text" )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menuButtonEdit"
+					"text": new FormMessage( null, "menuButtonEdit.text" )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menuButtonView"
+					"text": new FormMessage( null, "menuButtonView.text" )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menuButtonExamples"
+					"text": new FormMessage( null, "menuButtonExamples.text" )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 25, 40 )
+			"size": new java.awt.Dimension( 790, 530 )
+		} )
+	}
+}

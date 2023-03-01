@@ -1,0 +1,15 @@
+package common.classes.ultility;
+
+public enum FairnessType {
+    NO_FAIRNESS,
+
+    EVENT_LEVEL_WEAK_FAIRNESS,
+
+    EVENT_LEVEL_STRONG_FAIRNESS,
+
+    PROCESS_LEVEL_WEAK_FAIRNESS,
+
+    PROCESS_LEVEL_STRONG_FAIRNESS,
+
+    GLOBAL_FAIRNESS
+}

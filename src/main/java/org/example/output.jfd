@@ -1,0 +1,60 @@
+JFDML JFormDesigner: "8.0.1.0.199" Java: "11.0.13" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundleName": "form"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": new FormMessage( null, "this.title" )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) ) {
+					name: "buttonBar"
+					"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "okButton"
+						"text": new FormMessage( null, "okButton.text_2" )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "helpButton"
+						"text": new FormMessage( null, "helpButton.text" )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "cancelButton2"
+						"text": new FormMessage( null, "cancelButton2.text" )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "cancelButton"
+						"text": new FormMessage( null, "cancelButton.text_2" )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "cancelButton3"
+						"text": new FormMessage( null, "cancelButton3.text" )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane2"
+					add( new FormComponent( "javax.swing.JTextArea" ) {
+						name: "textArea1"
+						"rows": 3
+						"lineWrap": true
+						"background": sfield java.awt.Color white
+						"text": new FormMessage( null, "textArea1.text" )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 755, 450 )
+		} )
+	}
+}

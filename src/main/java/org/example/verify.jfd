@@ -1,0 +1,177 @@
+JFDML JFormDesigner: "8.0.1.0.199" Java: "11.0.13" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundleName": "form"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": new FormMessage( null, "this.title_2" )
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/ver3.png" )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+					name: "contentPanel"
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "487:1.0, 80, 80, 80"
+					"$rowSpecs": "0"
+					"$hGap": 5
+					"$vGap": 5
+				} ) {
+					name: "buttonBar"
+					"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "okButton"
+						"text": new FormMessage( null, "okButton.text_3" )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 1
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "cancelButton"
+						"text": new FormMessage( null, "cancelButton.text_3" )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 2
+						"gridy": 0
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "helpButton"
+						"text": new FormMessage( null, "helpButton.text_2" )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 3
+						"gridy": 0
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+						name: "panel2"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "table1"
+							"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+								add( new java.util.Vector {
+									add( "①" )
+									add( "System deadlockfree;" )
+									add( true )
+								} )
+								add( new java.util.Vector {
+									add( "②" )
+									add( "System divergencefree;" )
+									add( false )
+								} )
+								add( new java.util.Vector {
+									add( "③" )
+									add( "System |= []guard;" )
+									add( false )
+								} )
+								add( new java.util.Vector {
+									add( "④" )
+									add( "System |= [](turnOn -> <> turnOff);" )
+									add( false )
+								} )
+								add( new java.util.Vector {
+									add( "⑤" )
+									add( "System reaches firststate;" )
+									add( false )
+								} )
+								add( new java.util.Vector {
+									add( "⑥" )
+									add( "System reaches secondstate;" )
+									add( false )
+								} )
+							}, new java.util.Vector {
+								add( " No." )
+								add( "Assertions" )
+								add( " " )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( class java.lang.Boolean )
+							}, new java.util.Vector {
+								add( true )
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( new com.jformdesigner.model.SwingTableColumn( null, 0, 0, 25, false ) )
+								add( null )
+								add( new com.jformdesigner.model.SwingTableColumn( null, 0, 0, 40, true ) )
+							} )
+							"toolTipText": " "
+							"cellSelectionEnabled": true
+							"font": new com.jformdesigner.model.SwingFont( "Button.font" )
+							"preferredScrollableViewportSize": new java.awt.Dimension( 450, 120 )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "Center"
+						} )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "North"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+					name: "panel1"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+						name: "panel4"
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+							name: "panel5"
+							add( new FormComponent( "javax.swing.JFormattedTextField" ) {
+								name: "formattedTextField1"
+								"text": new FormMessage( null, "formattedTextField1.text" )
+								"preferredSize": new java.awt.Dimension( 160, 30 )
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "Center"
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "button1"
+								"icon": new com.jformdesigner.model.SwingIcon( 0, "/veri.png" )
+								"preferredSize": new java.awt.Dimension( 34, 30 )
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "West"
+							} )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "North"
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane2"
+							add( new FormComponent( "javax.swing.JTextArea" ) {
+								name: "textArea1"
+								"text": new FormMessage( null, "textArea1.text_2" )
+								"preferredSize": new java.awt.Dimension( 785, 19 )
+								"font": new com.jformdesigner.model.SwingDerivedFont( "JetBrains Mono Medium", 65536, 0, false )
+								"foreground": sfield java.awt.Color darkGray
+								"background": sfield java.awt.Color white
+							} )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "Center"
+						} )
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "Center"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+						name: "panel3"
+						add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsSeparator" ) {
+							name: "separator1"
+							"text": new FormMessage( null, "separator1.text" )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "Center"
+						} )
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "North"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "West"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 15 )
+			"size": new java.awt.Dimension( 815, 530 )
+		} )
+	}
+}
